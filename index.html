@@ -1,0 +1,478 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>Semantic_Ui</title>
+	<link type="text/css" rel="stylesheet" href="css/semantic.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+<div class="ui modal">
+	<i class="close icon"></i>
+	<div class="header">
+        <i class="checkmark icon"></i> CLICK
+	</div>
+	<div class="image content">
+		<div class="ui large image">
+		    <img id="modal-photo" src="images/logo_02.png" alt="no">
+		</div>
+        <div class="description">
+            <div id="title" class="ui header">자세히 보기</div>
+            <p class="price">
+                We've grabbed the following image from the  image associated with your registered e-mail<br/>
+                address.Is it okay to use this photo?We've grabbed the following image from the image associated<br />
+                with your registered e-mail address.</p>
+            <p class="modal-move"><a href="javascript:void(0)">Detail Page <i class="arrow circle right icon"></i></a></p>
+        </div>
+	</div>
+	<div class="actions">
+		<div class="ui black deny button">
+			NO
+		</div>
+		<div class="ui positive right labeled icon button">
+			CART
+			<i class="checkmark icon"></i>
+		</div>
+	</div>
+</div>
+<!-- modal-click -->
+
+<div>
+<!--header begin-->
+	<header>
+		<div class="bigcontainer">
+			<div id="logo">
+				<a href="#">logo</a>
+			</div>
+			<div class="user">
+                <div class="ui secondary  menu">
+                    <a class="active item">
+                        My Home
+                    </a>
+                    <a class="item">
+                        Log In
+                    </a>
+                    <a class="item">
+                        Join Us
+                    </a>
+                    <div class="right menu">
+                        <div class="item">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="Search...">
+                                <i class="search link icon"></i>
+                            </div>
+                        </div>
+                        <a class="ui item" href="mailto:jh828204@naver.com">
+                            Mail
+                        </a>
+                    </div>
+                </div>
+                <div class="header-dd">
+                    <div class="ui dropdown">
+                        <div class="text"><i class="star icon"></i>Favorite</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item"><i class="add to cart icon"></i>Cart</div>
+                            <div class="item"><i class="shopping bag icon"></i>Wish List</div>
+                            <div class="item"><i class="payment icon"></i>Buy</div>
+                            <div class="item"><i class="trash icon"></i>Move to trash</div>
+                            <div class="item"><i class="setting icon"></i>Setting</div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</header>
+<!-- the main menu-->
+
+    <div id="nav" class="ui stackable menu">
+        <div class="item">
+            <img src="images/logo_02.png">
+        </div>
+        <a class="item">Features</a>
+        <a class="item">Testimonials</a>
+        <a class="item">Sign-in</a>
+    </div>
+
+	<div class="container">
+		<div class="pageHeader">
+			<div class="segment">
+				<div class="ui dividing header">
+  					<i class="large home icon"></i>
+                    <div class="content">
+                        JUHEE
+                        <div class="sub header">PORTFOLIO</div>
+                    </div>
+				</div>
+			</div>
+		</div>
+        <div class="slide">
+            <div class="slide-new">
+                <ul>
+                    <li>
+                        <img src="images/main_1.jpg" alt="slide-image01">
+                    </li>
+                    <li>
+                        <img src="images/main_2.jpg" alt="slide-image02">
+                    </li>
+                    <li>
+                        <img src="images/main_3.jpg" alt="slide-image03">
+                    </li>
+                    <li>
+                        <img src="images/main_4.jpg" alt="slide-image04">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt10"></div>
+        <div class="best-container">
+            <h1>BEST - ITEMS</h1>
+            <div class="mt10"></div>
+            <div class="ui special four cards">
+                <div class="card click-modal" data-image="images/best_01.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_01.jpg" alt="Couple Rash Guard">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Couple Rash Guard</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 59,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_02.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_02.jpg" alt="Vikini Rash Guard">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Vikini Rash Guard</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 39,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_03.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_03.jpg" alt="Summer Mini-Dress">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Summer Mini-Dress</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 39,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_04.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_04.jpg" alt="Couple-Look">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Couple-Look</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 69,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui special four cards">
+                <div class="card click-modal" data-image="images/best_05.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_05.jpg" alt="Vikini Swimming-Wear">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Vikini Swimming-Wear</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 49,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_06.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_06.jpg" alt="Flamingo Tube">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Flamingo Tube</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 39,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_07.jpg">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_07.jpg" alt="Vikini Rash Guard">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Vikini Rash Guard</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 39,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/best_08.png">
+                    <div class="blurring dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <div class="ui inverted button"><i class="checkmark icon"></i> CLICK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/best_08.png" alt="Couple-Look">
+                    </div>
+                    <div class="content">
+                        <a class="header" title="Move To Detail Page">Couple-Look</a>
+                        <div class="meta">
+                            <span class="date">Price <i class="won icon"></i> 69,800</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ui special cards -->
+        </div>
+        <div class="banner mt30">
+            <div class="slide-banner">
+                <ul>
+                    <li>
+                        <img src="images/banner_01.jpg" alt="banner-image01">
+                    </li>
+                    <li>
+                        <img src="images/banner_02.jpg" alt="banner-image02">
+                    </li>
+                    <li>
+                        <img src="images/banner_03.jpg" alt="banner-image03">
+                    </li>
+                    <li>
+                        <img src="images/banner_04.jpg" alt="banner-image04">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt10"></div>
+        <div class="hot-container">
+            <h1>HOT - ITEMS</h1>
+            <div class="mt10"></div>
+            <div class="ui link four cards">
+                <div class="card click-modal" data-image="images/summer_01.jpg">
+                    <div class="image">
+                        <img src="images/summer_01.jpg" alt="Rash-Guard Set" title="Move To Detail Page">
+                    </div>
+                    <div class="content">
+                        <div class="header" title="Move To Detail Page">Rash-Guard Set</div>
+                        <div class="meta">
+                            <a class="date">NEW</a>
+                        </div>
+                        <div class="description">
+                            Matthew is an interior designer living in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2017
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            75 Friends
+                        </span>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/summer_02.jpg"">
+                    <div class="image">
+                        <img src="images/summer_02.jpg" alt="Snorkeling" title="Move To Detail Page">
+                    </div>
+                    <div class="content">
+                        <div class="header" title="Move To Detail Page">Snorkeling</div>
+                        <div class="meta">
+                            <a class="date">BEST-SELLER</a>
+                        </div>
+                        <div class="description">
+                            Molly is a personal assistant living in Paris.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2016
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            35 Friends
+                        </span>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/summer_03.jpg"">
+                    <div class="image">
+                        <img src="images/summer_03.jpg" alt="WaterProof Make-Up" title="Move To Detail Page">
+                    </div>
+                    <div class="content">
+                        <div class="header" title="Move To Detail Page">WaterProof Make-Up</div>
+                        <div class="meta">
+                            <a class="date">STEADY-SELLER</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2016
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            151 Friends
+                        </span>
+                    </div>
+                </div>
+                <div class="card click-modal" data-image="images/summer_04.jpg"">
+                    <div class="image">
+                        <img src="images/summer_04.jpg" alt="Sun-Glass" title="Move To Detail Page">
+                    </div>
+                    <div class="content">
+                        <div class="header" title="Move To Detail Page">Sun-Glass</div>
+                        <div class="meta">
+                            <a class="date">BEST-SELLER</a>
+                        </div>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2017
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            151 Friends
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ui link four cards -->
+        </div>
+    </div>
+</div>
+<!--footer begin-->
+<footer class="mt30">
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
+				<span class="logo">h</span>					
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	$(document).ready(function(){
+		$('.ui.dropdown')
+			.dropdown();
+	});
+</script>
+</body>
+</html>
