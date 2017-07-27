@@ -17,6 +17,32 @@
 </head>
 <body>
 
+<div id="login-modal" class="ui tiny modal">
+    <div class="header">Log In</div>
+    <div class="content">
+        <form class="ui form">
+            <div class="field">
+                <label>ID</label>
+                <input type="text" name="ID" placeholder="ID">
+            </div>
+            <div class="field">
+                <label>PASSWORD</label>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="field">
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public">
+                    <label>Automatic Log In</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="actions">
+        <div class="ui approve button">Submit</div>
+        <div id="login-btn" class="ui cancel button">Cancel</div>
+    </div>
+</div>
+
 <div id="notice-modal" class="ui modal">
 	<i class="close icon"></i>
 	<div class="header">
@@ -48,32 +74,6 @@
 </div>
 <!-- modal-click -->
 
-<div id="login-modal "class="ui modal">
-    <div class="header">Log In</div>
-    <div class="content">
-        <form class="ui form">
-            <div class="field">
-                <label>ID</label>
-                <input type="text" name="ID" placeholder="ID">
-            </div>
-            <div class="field">
-                <label>PASSWORD</label>
-                <input type="password" name="password" placeholder="password">
-            </div>
-            <div class="field">
-                <div class="ui toggle checkbox">
-                    <input type="checkbox" name="public">
-                    <label>Automatic Log In</label>
-                </div>
-            </div>
-            <button class="ui button" type="submit">Submit</button>
-        </form>
-    </div>
-    <div class="actions">
-        <div class="ui approve button">Approve</div>
-        <div id="login-btn" class="ui cancel button">Cancel</div>
-    </div>
-</div>
 
 <div>
 <!--header begin-->
@@ -87,7 +87,7 @@
                     <a class="active item">
                         My Home
                     </a>
-                    <a id="login-click" class="item" title="Move To Log-In Page">
+                    <a href="javascript:void(0);" id="login-click" class="item" title="Move To Log-In Page">
                         Log In
                     </a>
                     <a class="item" href="joinus.html" target="_blank" title="Move To Join-Us Page">

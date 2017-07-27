@@ -15,16 +15,15 @@ $(function () {
         on: 'hover'
     });
 
-    $('.small.modal')
-        .modal('show')
-        ;
-
     $("#login-click").click(function () {
+        $('#login-modal')
+            .modal('show')
+            .modal('attach events', '.ui.button');
+
         console.log("gogogogo");
-        $("#login-modal").fadeIn();
     });
     $("#login-btn").click(function () {
-        $("#login-modal").fadeOut();
+        $("#login-modal").modal('hide');
     });
 
     $(".click-modal").click(function () {
@@ -36,7 +35,6 @@ $(function () {
         $("#title").text(name);
         $("#modal-photo").attr("src", image);
         $('#notice-modal')
-            .modal({ allowMultiple: false })
             .modal('show')
             .modal('attach events', '.ui.button');
     });
