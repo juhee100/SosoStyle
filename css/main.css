@@ -35,16 +35,17 @@ h1 {
     border-bottom: 1px solid rgba(34,36,38,0.15);
 }
 .mt30{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .mt10 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .close icon {
     font-size: 30px;
 }
 .ui.modal{
     text-align: center;
+    z-index: 100;
 }
 .modal .header {
     text-align: center;
@@ -201,3 +202,23 @@ footer {
 #copyrights .fl {
 	float:left;
 }
+
+/*joinus*/
+.joinus-wrap{
+    width: 1024px;
+    padding: 5% 0 0 0;
+}
+h4.ui.header{
+    font-size: 20px;
+}
+.ui.header{
+    color: lightpink;
+}
+.ui.primary.button, .ui.primary.buttons .button{
+    background: #aaa;
+}
+
+.ui.button{
+    background-color: powderblue;
+}
+

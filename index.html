@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="ui modal">
+<div id="notice-modal" class="ui modal">
 	<i class="close icon"></i>
 	<div class="header">
         <i class="checkmark icon"></i> CLICK
@@ -48,15 +48,30 @@
 </div>
 <!-- modal-click -->
 
-<div id="modal-login" class="ui modal">
-    <div class="header">Header</div>
+<div id="login-modal "class="ui modal">
+    <div class="header">Log In</div>
     <div class="content">
-        <p></p>
+        <form class="ui form">
+            <div class="field">
+                <label>ID</label>
+                <input type="text" name="ID" placeholder="ID">
+            </div>
+            <div class="field">
+                <label>PASSWORD</label>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="field">
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public">
+                    <label>Automatic Log In</label>
+                </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+        </form>
     </div>
     <div class="actions">
         <div class="ui approve button">Approve</div>
-        <div class="ui button">Neutral</div>
-        <div id="close-btn"class="ui cancel button">Cancel</div>
+        <div id="login-btn" class="ui cancel button">Cancel</div>
     </div>
 </div>
 
@@ -72,17 +87,17 @@
                     <a class="active item">
                         My Home
                     </a>
-                    <a class="item click-login" title="Move To LogIn Page">
+                    <a id="login-click" class="item" title="Move To Log-In Page">
                         Log In
                     </a>
-                    <a class="item" href="joinus.html" target="_blank" title="Move To JoinUs Page">
+                    <a class="item" href="joinus.html" target="_blank" title="Move To Join-Us Page">
                         Join Us
                     </a>
                     <div class="right menu">
                         <div class="item">
                             <div class="ui icon input">
                                 <input type="text" placeholder="Search...">
-                                <i class="search link icon"></i>
+                                <i class="circular search link icon"></i>
                             </div>
                         </div>
                         <a class="ui item" href="mailto:jh828204@naver.com">

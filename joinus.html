@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>Join US</title>
+    <link type="text/css" rel="stylesheet" href="css/semantic.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousellite.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+ </head>
+ <body class="joinus-wrap">
+     <form class="ui form">
+         <h4 class="ui dividing header">Shipping Information</h4>
+         <div class="two fields">
+             <div class="field">
+                 <label>Name</label>
+                 <input placeholder="Name" name="name" type="text">
+             </div>
+             <div class="field">
+                 <label>Gender</label>
+                 <select class="ui dropdown" name="gender">
+                     <option value="">Gender</option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                 </select>
+             </div>
+         </div>
+         <div class="two fields">
+             <div class="field">
+                 <label>ID</label>
+                 <input placeholder="ID" name="ID" type="text">
+             </div>
+             <div class="field">
+                 <label>Nick Name</label>
+                 <input placeholder="Nick Name" type="text" name="nickname">
+             </div>
+         </div>
+         <div class="inline field">
+             <div class="ui checkbox">
+                 <input type="checkbox" name="terms">
+                 <label>ID 중복 확인</label>
+             </div>
+         </div>
+         <div class="ui primary submit button">Confirm</div>
+         <div class="ui error message"></div>
+         <div class="mt30"></div>
+
+         <div class="field">
+             <div class="field">
+                 <label>Phone Number</label>
+                 <input name="tel" type="text">
+             </div>
+         </div>
+
+         <div class="field">
+             <label>E-Mail</label>
+             <div class="two fields">
+                 <div class="field">
+                     <input type="text" name="shipping" placeholder="E-Mail">
+                 </div>
+                 <div class="field">
+                     <input type="text" name="shipping" placeholder="@naver.com">
+                 </div>
+             </div>
+         </div>
+         <div class="field">
+             <label>Billing Address</label>
+             <div class="fields">
+                 <div class="twelve wide field">
+                     <input type="text" name="shipping[address]" placeholder="Street Address">
+                 </div>
+                 <div class="four wide field">
+                     <input type="text" name="shipping[address-2]" placeholder="Apt #">
+                 </div>
+             </div>
+         </div>
+         <div class="two fields">
+             <div class="field">
+                 <label>State</label>
+                 <select class="ui fluid dropdown">
+                     <option value="">State</option>
+                     <option value="AL">서대문구</option>
+                     <option value="AK">마포구</option>
+                     <option value="AZ">동작구</option>
+                     <option value="AR">일산동구</option>
+                     <option value="CA">일산서구</option>
+                     <option value="CO">덕양구</option>
+                     <option value="CT">부평구</option>
+                     <option value="DE">일산구</option>
+                     <option value="DC">동래구</option>
+                     <option value="FL">해운대구</option>
+                 </select>
+             </div>
+             <div class="field">
+                 <label>City</label>
+                 <select class="ui fluid dropdown">
+                     <option value="">City</option>
+                     <option value="AL">서울시</option>
+                     <option value="AK">경기도</option>
+                     <option value="AZ">부산시</option>
+                     <option value="AR">인천시</option>
+                     <option value="CA">순천시</option>
+                     <option value="CA">동탄시</option>
+                     <option value="CA">군포시</option>
+                 </select>
+             </div>
+         </div>
+         <h4 class="ui dividing header">Billing Information</h4>
+         <div class="field">
+             <label>Card Type</label>
+             <select class="ui fluid dropdown">
+                 <option value="">Card Type</option>
+                 <option value="AL">MASTER</option>
+                 <option value="AK">VISA</option>
+                 <option value="AZ">BC</option>
+                 <option value="AR">HYUNDAI</option>
+                 <option value="CA">SK HANA</option>
+                 <option value="CO">SAMSUNG</option>
+                 <option value="CT">JJBBCC</option>
+             </select>
+        </div>
+        <div class="ui segment">
+            <div class="field">
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public">
+                    <label>Subscribe to weekly newsletter</label>
+                </div>
+            </div>
+        </div>
+        <div class="ui button" tabindex="0">Submit Order</div>
+     </form>
+ </body>
+</html>

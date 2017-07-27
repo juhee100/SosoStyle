@@ -15,6 +15,18 @@ $(function () {
         on: 'hover'
     });
 
+    $('.small.modal')
+        .modal('show')
+        ;
+
+    $("#login-click").click(function () {
+        console.log("gogogogo");
+        $("#login-modal").fadeIn();
+    });
+    $("#login-btn").click(function () {
+        $("#login-modal").fadeOut();
+    });
+
     $(".click-modal").click(function () {
         var image = $(this).data("image");
         var name = $(this).find("img").attr("alt");
@@ -23,21 +35,12 @@ $(function () {
         $(".price").text(price);
         $("#title").text(name);
         $("#modal-photo").attr("src", image);
-        $('.modal')
+        $('#notice-modal')
             .modal({ allowMultiple: false })
             .modal('show')
             .modal('attach events', '.ui.button');
     });
 
-    $(".click-login").click(function () {
-        $("#modal-login").fadeIn();
-    });
-    $("#close-btn").click(function () {
-        $("#modal-login").fadeOut();
-    });
-    $('.small.modal')
-        .modal('show')
-        ;
 });
 
 
