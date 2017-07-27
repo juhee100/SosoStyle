@@ -35,6 +35,9 @@ $(function () {
     $("#close-btn").click(function () {
         $("#modal-login").fadeOut();
     });
+    $('.small.modal')
+        .modal('show')
+        ;
 });
 
 
