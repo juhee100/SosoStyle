@@ -28,6 +28,13 @@ $(function () {
             .modal('show')
             .modal('attach events', '.ui.button');
     });
+
+    $(".click-login").click(function () {
+        $("#modal-login").fadeIn();
+    });
+    $("#close-btn").click(function () {
+        $("#modal-login").fadeOut();
+    });
 });
 
 
