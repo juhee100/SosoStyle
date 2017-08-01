@@ -1,8 +1,4 @@
 $(window).load(function () {
-
-});
-
-$(function () {
     $(".slide-new").jCarouselLite({
         visible: 4,
         auto: 800,
@@ -15,7 +11,9 @@ $(function () {
         auto: 800,
         speed: 2500
     });
+});
 
+$(function () {
     $('.special.cards .image').dimmer({
         on: 'hover'
     });
