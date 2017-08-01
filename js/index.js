@@ -11,7 +11,7 @@ $(function () {
     $(".slide-banner").jCarouselLite({
         auto: 800,
         speed: 2500,
-        visible: 4,
+        visible: 4
     });
 
     $('.special.cards .image').dimmer({
