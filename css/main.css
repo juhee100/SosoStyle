@@ -158,8 +158,40 @@ header {
 .slide-new, .slide-banner {
     width: 100%;
 }
+.slide-banner ul li{
+    position: relative;
+}
+.maketting {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    background: rgba(255,255,255,0.3);
+    text-align: center;
+    color: #000;
+}
+.mWrap{
+    margin: 10px;
+    border: 2px solid #fff;
+}
+.bannerActive, .bannerClick {
+    display: inline-block;
+    padding: 7px;
+    width: 100%;
+}
+.bannerActive{
+    font-size: 30px;
+}
+.bannerActive{
+    font-size: 18px;
+}
 .slide-new img, .slide-banner img {
     width: 1280px;
+}
+.maketting:hover, .mWrap:hover {
+    color: #fff;
+    transition: all 0.3s;
 }
 /*footer start*/
 footer {

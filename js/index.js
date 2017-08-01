@@ -1,14 +1,17 @@
 $(function () {
 
     $(".slide-new").jCarouselLite({
+        
         auto: 800,
         speed: 1500,
+        visible: 4,
         mouseWheel: true
     });
 
     $(".slide-banner").jCarouselLite({
         auto: 800,
-        speed: 2500
+        speed: 2500,
+        visible: 4,
     });
 
     $('.special.cards .image').dimmer({
